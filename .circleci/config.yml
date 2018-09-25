@@ -1,16 +1,4 @@
 version: 2
-workflows:
-   version: 2
-   nightly:
-     triggers:
-       - schedule:
-           cron: "0 9 * * *"
-           filters:
-             branches:
-               only:
-                 - master
-     jobs:
-       - run
 jobs:
  run:
    machine: true
