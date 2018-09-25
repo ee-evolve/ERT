@@ -1,0 +1,3 @@
+.circleci/
+.python-version
+Dockerfile
