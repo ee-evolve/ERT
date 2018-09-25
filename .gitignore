@@ -84,4 +84,9 @@ fabric.properties
 
 .idea
 
-__pycache__
+# Ignore vscode
+.vscode
+
+__pycache__/
+*/__pycache__/
+
