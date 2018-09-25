@@ -1,6 +1,7 @@
 import atoma
 import requests
 
+REPOS_FILENAME = ''
 
 def get_repos_list(filename):
     if not filename:
@@ -15,9 +16,14 @@ def get_repos_list(filename):
 def create_url(repo_name):
     return 'https://github.com/' + repo_name + '/releases.atom'
 
+def get_atom_feed(url):
+
+
 
 def main():
-    response = requests.get('http://lucumr.pocoo.org/feed.atom')
+    repos_list = get_repos_list(REPOS_FILENAME)
+    urls = map(create_url, repos_list)
+    response = requests.get(url)
     feed = atoma.parse_atom_bytes(response.content)
     print(feed)
 
