@@ -29,12 +29,13 @@ def get_entries_from_parsed_atom_feed(parsed_atom_feed):
 
 
 def is_datetime_in_last_24h(release_datetime):
-    return datetime.now(timezone.utc) - timedelta(hours=100) <= release_datetime
+    return datetime.now(timezone.utc) - timedelta(hours=24) <= release_datetime
 
 
 def retrieve_releases_in_last_24h(parsed_atom_feeds):
     entries = list(map(get_entries_from_parsed_atom_feed, parsed_atom_feeds))
     return filter(lambda x: is_datetime_in_last_24h(x.updated), entries[0])
+
 
 def main():
     repos_list = get_repos_list(REPOS_FILENAME)
