@@ -1,1 +1,1 @@
-containous/traefik
+jenkinsci/jenkins
