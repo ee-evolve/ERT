@@ -8,8 +8,8 @@ from mock import *
 
 class UpdaterTest(unittest.TestCase):
 
-    EMPTY_REPOS_LIST_FILENAME = 'resources/empty_repos_list.txt'
-    REPOS_LIST_FILENAME = 'resources/repos_list.txt'
+    EMPTY_REPOS_LIST_FILENAME = 'tests/resources/empty_repos_list.txt'
+    REPOS_LIST_FILENAME = 'tests/resources/repos_list.txt'
 
     def test_empty_file_parsing(self):
         repos_list = updater.get_repos_list(self.EMPTY_REPOS_LIST_FILENAME)
