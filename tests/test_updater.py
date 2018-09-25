@@ -1,6 +1,10 @@
 import unittest
 import updater
+from datetime import datetime, timedelta
+from mock import *
 
+mock_datetime = Mock()
+mock_datetime.return_value = datetime(2018, 5, 10, 10, 0, 0)
 
 class UpdaterTest(unittest.TestCase):
 
@@ -19,6 +23,9 @@ class UpdaterTest(unittest.TestCase):
         url = updater.create_url('test/demo')
         self.assertEqual(url, 'https://github.com/test/demo/releases.atom')
 
+    @patch('datetime.now', mock_datetime)
+    def test_release_is_25h_old(self):
+        self.assertFalse(updater.is_datetime_in_last_24h())
 
 if __name__ == '__main__':
     unittest.main()
