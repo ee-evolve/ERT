@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/containous/traefik/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/containous/traefik/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/containous/traefik/releases.atom"/>
+  <title>Release notes from traefik</title>
+  <updated>2018-09-24T10:44:03+01:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0</id>
+    <updated>2018-09-24T11:45:23+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0"/>
+    <title>v1.7.0</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.7.0-rc1...v1.7.0&quot;&gt;Commits&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.0-rc1...v1.7.0-rc1&quot;&gt;Commits pre RC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Simplify get acme client (&lt;a href=&quot;https://github.com/containous/traefik/pull/3499&quot;&gt;#3499&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Simplify acme e2e tests. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3534&quot;&gt;#3534&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Add option to select algorithm to generate ACME certificates (&lt;a href=&quot;https://github.com/containous/traefik/pull/3319&quot;&gt;#3319&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Enable to override certificates in key-value store when using storeconfig (&lt;a href=&quot;https://github.com/containous/traefik/pull/3202&quot;&gt;#3202&lt;/a&gt; by &lt;a href=&quot;https://github.com/thomasjpfan&quot;&gt;thomasjpfan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; ACME TLS ALPN (&lt;a href=&quot;https://github.com/containous/traefik/pull/3553&quot;&gt;#3553&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Remove acme provider dependency in server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3225&quot;&gt;#3225&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Use official Pebble Image. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3708&quot;&gt;#3708&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api,cluster]&lt;/strong&gt; Improved cluster api to include the current leader node (&lt;a href=&quot;https://github.com/containous/traefik/pull/3100&quot;&gt;#3100&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,consul,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Auth support in frontends (&lt;a href=&quot;https://github.com/containous/traefik/pull/3559&quot;&gt;#3559&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,k8s]&lt;/strong&gt; Auth support in frontends for k8s and file (&lt;a href=&quot;https://github.com/containous/traefik/pull/3460&quot;&gt;#3460&lt;/a&gt; by &lt;a href=&quot;https://github.com/Zatte&quot;&gt;Zatte&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Add xforwarded method (&lt;a href=&quot;https://github.com/containous/traefik/pull/3424&quot;&gt;#3424&lt;/a&gt; by &lt;a href=&quot;https://github.com/erik-sjoestedt&quot;&gt;erik-sjoestedt&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Forward auth headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3521&quot;&gt;#3521&lt;/a&gt; by &lt;a href=&quot;https://github.com/hwhelan-CB&quot;&gt;hwhelan-CB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consul,etcd,tls]&lt;/strong&gt; Improve TLS integration tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3679&quot;&gt;#3679&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog,docker,ecs,file,k8s,kv,marathon,mesos,rancher]&lt;/strong&gt; Add SSLForceHost support. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3246&quot;&gt;#3246&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Multiple frontends for consulcatalog (&lt;a href=&quot;https://github.com/containous/traefik/pull/3796&quot;&gt;#3796&lt;/a&gt; by &lt;a href=&quot;https://github.com/hsmade&quot;&gt;hsmade&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Add support for stale reads from Consul catalog (&lt;a href=&quot;https://github.com/containous/traefik/pull/3523&quot;&gt;#3523&lt;/a&gt; by &lt;a href=&quot;https://github.com/marenzo&quot;&gt;marenzo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Add a default value for the docker.network configuration (&lt;a href=&quot;https://github.com/containous/traefik/pull/3471&quot;&gt;#3471&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Support for AWS ECS Fargate (&lt;a href=&quot;https://github.com/containous/traefik/pull/3379&quot;&gt;#3379&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Add support for ECS constraints (&lt;a href=&quot;https://github.com/containous/traefik/pull/3537&quot;&gt;#3537&lt;/a&gt; by &lt;a href=&quot;https://github.com/andrewstucki&quot;&gt;andrewstucki&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Add segment support for ECS  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3817&quot;&gt;#3817&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Support &lt;code&gt;traefik.backend&lt;/code&gt; for ECS (&lt;a href=&quot;https://github.com/containous/traefik/pull/3510&quot;&gt;#3510&lt;/a&gt; by &lt;a href=&quot;https://github.com/hwhelan-CB&quot;&gt;hwhelan-CB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Allow binding ECS container port (&lt;a href=&quot;https://github.com/containous/traefik/pull/3533&quot;&gt;#3533&lt;/a&gt; by &lt;a href=&quot;https://github.com/andrewstucki&quot;&gt;andrewstucki&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck,consul,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Override health check scheme (&lt;a href=&quot;https://github.com/containous/traefik/pull/3315&quot;&gt;#3315&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Support 3xx HTTP status codes for health check (&lt;a href=&quot;https://github.com/containous/traefik/pull/3364&quot;&gt;#3364&lt;/a&gt; by &lt;a href=&quot;https://github.com/SniperCZE&quot;&gt;SniperCZE&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Support all 2xx HTTP status code for health check. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3362&quot;&gt;#3362&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Add HTTP headers to healthcheck. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3047&quot;&gt;#3047&lt;/a&gt; by &lt;a href=&quot;https://github.com/zetaab&quot;&gt;zetaab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add more k8s tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3491&quot;&gt;#3491&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Substitude hardcoded &quot;&amp;lt;namespace&amp;gt;/&amp;lt;name&amp;gt;&quot; with k8s ListerGetter (&lt;a href=&quot;https://github.com/containous/traefik/pull/3470&quot;&gt;#3470&lt;/a&gt; by &lt;a href=&quot;https://github.com/yue9944882&quot;&gt;yue9944882&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Custom frontend name for test helper (&lt;a href=&quot;https://github.com/containous/traefik/pull/3444&quot;&gt;#3444&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add annotation to allow modifiers to be used properly in kubernetes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3481&quot;&gt;#3481&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Create Global Backend Ingress (&lt;a href=&quot;https://github.com/containous/traefik/pull/3404&quot;&gt;#3404&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Specify backend servers&#39; weight via annotation for kubernetes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3112&quot;&gt;#3112&lt;/a&gt; by &lt;a href=&quot;https://github.com/yue9944882&quot;&gt;yue9944882&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Support multi-port services. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3121&quot;&gt;#3121&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Mapping ExternalNames to custom ports (&lt;a href=&quot;https://github.com/containous/traefik/pull/3231&quot;&gt;#3231&lt;/a&gt; by &lt;a href=&quot;https://github.com/gildas&quot;&gt;gildas&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Allow any kubernetes ingressClass value (&lt;a href=&quot;https://github.com/containous/traefik/pull/3516&quot;&gt;#3516&lt;/a&gt; by &lt;a href=&quot;https://github.com/rtreffer&quot;&gt;rtreffer&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Enable Ingress Status updates (&lt;a href=&quot;https://github.com/containous/traefik/pull/3324&quot;&gt;#3324&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add possibility to set a protocol (&lt;a href=&quot;https://github.com/containous/traefik/pull/3648&quot;&gt;#3648&lt;/a&gt; by &lt;a href=&quot;https://github.com/SantoDE&quot;&gt;SantoDE&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Remove unnecessary loop (&lt;a href=&quot;https://github.com/containous/traefik/pull/3799&quot;&gt;#3799&lt;/a&gt; by &lt;a href=&quot;https://github.com/ZloyDyadka&quot;&gt;ZloyDyadka&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Use index-based syntax in KV tests. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3352&quot;&gt;#3352&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs,middleware]&lt;/strong&gt; Make accesslogs.logTheRoundTrip async to get lost performance (&lt;a href=&quot;https://github.com/containous/traefik/pull/3152&quot;&gt;#3152&lt;/a&gt; by &lt;a href=&quot;https://github.com/ryarnyah&quot;&gt;ryarnyah&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs,middleware]&lt;/strong&gt; Added duration filter for logs (&lt;a href=&quot;https://github.com/containous/traefik/pull/3463&quot;&gt;#3463&lt;/a&gt; by &lt;a href=&quot;https://github.com/rodrigodiez&quot;&gt;rodrigodiez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[marathon]&lt;/strong&gt; Sane default and configurable Marathon request timeouts (&lt;a href=&quot;https://github.com/containous/traefik/pull/3286&quot;&gt;#3286&lt;/a&gt; by &lt;a href=&quot;https://github.com/marco-jantke&quot;&gt;marco-jantke&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[marathon]&lt;/strong&gt; Adding compatibility for marathon 1.5 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3505&quot;&gt;#3505&lt;/a&gt; by &lt;a href=&quot;https://github.com/TrevinTeacutter&quot;&gt;TrevinTeacutter&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[mesos]&lt;/strong&gt; Segments Labels: Mesos (&lt;a href=&quot;https://github.com/containous/traefik/pull/3383&quot;&gt;#3383&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewkerrigan&quot;&gt;drewkerrigan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Metrics: Add support for InfluxDB Database / RetentionPolicy and HTTP client (&lt;a href=&quot;https://github.com/containous/traefik/pull/3391&quot;&gt;#3391&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewkerrigan&quot;&gt;drewkerrigan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Pass the TLS Cert infos in headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3826&quot;&gt;#3826&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,server]&lt;/strong&gt; Extreme Makeover: server refactoring (&lt;a href=&quot;https://github.com/containous/traefik/pull/3461&quot;&gt;#3461&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Added integration support for DataDog APM Tracing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3517&quot;&gt;#3517&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Create a custom logger for jaeger (&lt;a href=&quot;https://github.com/containous/traefik/pull/3541&quot;&gt;#3541&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Performance enhancements for the rules matchers. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3563&quot;&gt;#3563&lt;/a&gt; by &lt;a href=&quot;https://github.com/ShaneSaww&quot;&gt;ShaneSaww&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Extract internal router creation from server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3204&quot;&gt;#3204&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[rules]&lt;/strong&gt; CNAME flattening (&lt;a href=&quot;https://github.com/containous/traefik/pull/3403&quot;&gt;#3403&lt;/a&gt; by &lt;a href=&quot;https://github.com/gamalan&quot;&gt;gamalan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[servicefabric]&lt;/strong&gt; Add HTTP headers to healthcheck. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3205&quot;&gt;#3205&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tls]&lt;/strong&gt; Support TLS MinVersion and CipherSuite as CLI option. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3107&quot;&gt;#3107&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tls]&lt;/strong&gt; Improve TLS Handshake (&lt;a href=&quot;https://github.com/containous/traefik/pull/3512&quot;&gt;#3512&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[webui]&lt;/strong&gt; Add some missing elements in the WebUI (&lt;a href=&quot;https://github.com/containous/traefik/pull/3327&quot;&gt;#3327&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Call functions to enable block/mutex pprof profiles. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3564&quot;&gt;#3564&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor changes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3554&quot;&gt;#3554&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Generated assets file are only mandatory in main (&lt;a href=&quot;https://github.com/containous/traefik/pull/3386&quot;&gt;#3386&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;h2c server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3387&quot;&gt;#3387&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix backend reuse (&lt;a href=&quot;https://github.com/containous/traefik/pull/3312&quot;&gt;#3312&lt;/a&gt; by &lt;a href=&quot;https://github.com/arnested&quot;&gt;arnested&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade GRPC dependencies (&lt;a href=&quot;https://github.com/containous/traefik/pull/3342&quot;&gt;#3342&lt;/a&gt; by &lt;a href=&quot;https://github.com/gottwald&quot;&gt;gottwald&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement h2c with backend (&lt;a href=&quot;https://github.com/containous/traefik/pull/3371&quot;&gt;#3371&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme,cluster]&lt;/strong&gt; StoreConfig always initializes the account if it is missing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3844&quot;&gt;#3844&lt;/a&gt; by &lt;a href=&quot;https://github.com/geraldcroes&quot;&gt;geraldcroes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme,provider]&lt;/strong&gt; Create init method on provider interface (&lt;a href=&quot;https://github.com/containous/traefik/pull/3580&quot;&gt;#3580&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Does not generate ACME certificate if domain is checked by dynamic certificate (&lt;a href=&quot;https://github.com/containous/traefik/pull/3238&quot;&gt;#3238&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Ensure only certificates from ACME enabled entrypoint are used (&lt;a href=&quot;https://github.com/containous/traefik/pull/3880&quot;&gt;#3880&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix acme account deletion without provider change (&lt;a href=&quot;https://github.com/containous/traefik/pull/3664&quot;&gt;#3664&lt;/a&gt; by &lt;a href=&quot;https://github.com/zyclonite&quot;&gt;zyclonite&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix some DNS providers issues (&lt;a href=&quot;https://github.com/containous/traefik/pull/3915&quot;&gt;#3915&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix LEGO update (&lt;a href=&quot;https://github.com/containous/traefik/pull/3895&quot;&gt;#3895&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Set a keyType to ACME if the account is stored with no KeyType (&lt;a href=&quot;https://github.com/containous/traefik/pull/3733&quot;&gt;#3733&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix ACME certificate for wildcard and root domains (&lt;a href=&quot;https://github.com/containous/traefik/pull/3675&quot;&gt;#3675&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update lego (&lt;a href=&quot;https://github.com/containous/traefik/pull/3659&quot;&gt;#3659&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Bump LEGO version (&lt;a href=&quot;https://github.com/containous/traefik/pull/3888&quot;&gt;#3888&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Serve TLS-Challenge certificate in first (&lt;a href=&quot;https://github.com/containous/traefik/pull/3605&quot;&gt;#3605&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api,authentication,webui]&lt;/strong&gt; Auth section in web UI.  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3628&quot;&gt;#3628&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api]&lt;/strong&gt; Remove TLS in API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3665&quot;&gt;#3665&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,consulcatalog,docker,ecs,k8s,kv,marathon,mesos,rancher]&lt;/strong&gt; Auth Forward with certificates in templates. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3804&quot;&gt;#3804&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware,provider]&lt;/strong&gt; Don&#39;t pass the Authorization header to the backends (&lt;a href=&quot;https://github.com/containous/traefik/pull/3606&quot;&gt;#3606&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Do not copy hop-by-hop headers to forward auth request (&lt;a href=&quot;https://github.com/containous/traefik/pull/3907&quot;&gt;#3907&lt;/a&gt; by &lt;a href=&quot;https://github.com/stffabi&quot;&gt;stffabi&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Remove hop-by-hop headers from forward auth response (&lt;a href=&quot;https://github.com/containous/traefik/pull/3900&quot;&gt;#3900&lt;/a&gt; by &lt;a href=&quot;https://github.com/stffabi&quot;&gt;stffabi&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Uses both binded HostIP and HostPort when useBindPortIP=true (&lt;a href=&quot;https://github.com/containous/traefik/pull/3638&quot;&gt;#3638&lt;/a&gt; by &lt;a href=&quot;https://github.com/geraldcroes&quot;&gt;geraldcroes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Fix 400 bad request on  AWS ECS API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3629&quot;&gt;#3629&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix Rewrite-target regex (&lt;a href=&quot;https://github.com/containous/traefik/pull/3699&quot;&gt;#3699&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Don&#39;t merge kubernetes ingresses when priority is set (&lt;a href=&quot;https://github.com/containous/traefik/pull/3743&quot;&gt;#3743&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Prevent unparsable strings from being rendered in the Kubernetes template (&lt;a href=&quot;https://github.com/containous/traefik/pull/3753&quot;&gt;#3753&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Correct App-Root kubernetes behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3592&quot;&gt;#3592&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add more K8s Unit Tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3583&quot;&gt;#3583&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix rewrite-target Annotation behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3582&quot;&gt;#3582&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix panic setting ingress status (&lt;a href=&quot;https://github.com/containous/traefik/pull/3492&quot;&gt;#3492&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; KV and authentication (&lt;a href=&quot;https://github.com/containous/traefik/pull/3615&quot;&gt;#3615&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Add missing quotes around backendName in kv template (&lt;a href=&quot;https://github.com/containous/traefik/pull/3885&quot;&gt;#3885&lt;/a&gt; by &lt;a href=&quot;https://github.com/NatMarchand&quot;&gt;NatMarchand&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Include missing key in error message for KV store (&lt;a href=&quot;https://github.com/containous/traefik/pull/3779&quot;&gt;#3779&lt;/a&gt; by &lt;a href=&quot;https://github.com/camelpunch&quot;&gt;camelpunch&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs]&lt;/strong&gt; Add logs when error is generated in error handler (&lt;a href=&quot;https://github.com/containous/traefik/pull/3571&quot;&gt;#3571&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs]&lt;/strong&gt; Add interface to Træfik logger (&lt;a href=&quot;https://github.com/containous/traefik/pull/3889&quot;&gt;#3889&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Avoid a panic during Prometheus registering (&lt;a href=&quot;https://github.com/containous/traefik/pull/3717&quot;&gt;#3717&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Fix tracing duplicated headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3878&quot;&gt;#3878&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,websocket]&lt;/strong&gt; Enable retry on websocket (&lt;a href=&quot;https://github.com/containous/traefik/pull/3825&quot;&gt;#3825&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Avoid retries when any data was written to the backend (&lt;a href=&quot;https://github.com/containous/traefik/pull/3285&quot;&gt;#3285&lt;/a&gt; by &lt;a href=&quot;https://github.com/marco-jantke&quot;&gt;marco-jantke&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Extend https redirection tests, and fix incorrect behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3742&quot;&gt;#3742&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Send &#39;Retry-After&#39; to comply with RFC6585. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3593&quot;&gt;#3593&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Correct Entrypoint Redirect with Stripped or Added Path (&lt;a href=&quot;https://github.com/containous/traefik/pull/3631&quot;&gt;#3631&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Fix error pages (&lt;a href=&quot;https://github.com/containous/traefik/pull/3894&quot;&gt;#3894&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[oxy]&lt;/strong&gt; Handle Te header when http2 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3824&quot;&gt;#3824&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[server]&lt;/strong&gt; Avoid goroutine leak in server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3851&quot;&gt;#3851&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[server]&lt;/strong&gt; Avoid panic during stop (&lt;a href=&quot;https://github.com/containous/traefik/pull/3898&quot;&gt;#3898&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Added default configuration for DataDog APM Tracer (&lt;a href=&quot;https://github.com/containous/traefik/pull/3655&quot;&gt;#3655&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Added support for Trace name truncation for traces (&lt;a href=&quot;https://github.com/containous/traefik/pull/3689&quot;&gt;#3689&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[websocket]&lt;/strong&gt; Handle shutdown of Hijacked connections (&lt;a href=&quot;https://github.com/containous/traefik/pull/3636&quot;&gt;#3636&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[webui]&lt;/strong&gt; Added Dashboard table item for Rate Limits (&lt;a href=&quot;https://github.com/containous/traefik/pull/3893&quot;&gt;#3893&lt;/a&gt; by &lt;a href=&quot;https://github.com/codecyclist&quot;&gt;codecyclist&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix logger in Oxy (&lt;a href=&quot;https://github.com/containous/traefik/pull/3913&quot;&gt;#3913&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;H2C: Remove buggy line in init to make verbose switch working (&lt;a href=&quot;https://github.com/containous/traefik/pull/3701&quot;&gt;#3701&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updating oxy dependency (&lt;a href=&quot;https://github.com/containous/traefik/pull/3700&quot;&gt;#3700&lt;/a&gt; by &lt;a href=&quot;https://github.com/crholm&quot;&gt;crholm&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update ACME documentation about TLS-ALPN challenge (&lt;a href=&quot;https://github.com/containous/traefik/pull/3756&quot;&gt;#3756&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix some DNS provider link (&lt;a href=&quot;https://github.com/containous/traefik/pull/3639&quot;&gt;#3639&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix documentation for route53 acme provider (&lt;a href=&quot;https://github.com/containous/traefik/pull/3811&quot;&gt;#3811&lt;/a&gt; by &lt;a href=&quot;https://github.com/A-Shleifman&quot;&gt;A-Shleifman&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update Namecheap status (&lt;a href=&quot;https://github.com/containous/traefik/pull/3604&quot;&gt;#3604&lt;/a&gt; by &lt;a href=&quot;https://github.com/stoinov&quot;&gt;stoinov&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Fix style in examples/quickstart (&lt;a href=&quot;https://github.com/containous/traefik/pull/3705&quot;&gt;#3705&lt;/a&gt; by &lt;a href=&quot;https://github.com/korigod&quot;&gt;korigod&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Change syntax in quick start guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3726&quot;&gt;#3726&lt;/a&gt; by &lt;a href=&quot;https://github.com/trotro&quot;&gt;trotro&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Typo in docker-and-lets-encrypt.md (&lt;a href=&quot;https://github.com/containous/traefik/pull/3724&quot;&gt;#3724&lt;/a&gt; by &lt;a href=&quot;https://github.com/A-Shleifman&quot;&gt;A-Shleifman&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Improve the wording in the documentation for Docker and fix title for Docker User Guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3797&quot;&gt;#3797&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add a k8s guide section on traffic splitting via service weights. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3556&quot;&gt;#3556&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Change code block of traefik-web-ui to match file (&lt;a href=&quot;https://github.com/containous/traefik/pull/3542&quot;&gt;#3542&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewgwallace&quot;&gt;drewgwallace&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix typo which breaks k8s example manifest (&lt;a href=&quot;https://github.com/containous/traefik/pull/3441&quot;&gt;#3441&lt;/a&gt; by &lt;a href=&quot;https://github.com/GeertJohan&quot;&gt;GeertJohan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Correct Modifier in Kubernetes Documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3610&quot;&gt;#3610&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Improve Connection Limit Kubernetes Documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3711&quot;&gt;#3711&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add traefik prefix to k8s annotations (&lt;a href=&quot;https://github.com/containous/traefik/pull/3682&quot;&gt;#3682&lt;/a&gt; by &lt;a href=&quot;https://github.com/zifeo&quot;&gt;zifeo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update kubernetes docs to reflect https options (&lt;a href=&quot;https://github.com/containous/traefik/pull/3807&quot;&gt;#3807&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update kubernetes.md (&lt;a href=&quot;https://github.com/containous/traefik/pull/3719&quot;&gt;#3719&lt;/a&gt; by &lt;a href=&quot;https://github.com/kmaris&quot;&gt;kmaris&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Adding grafana dashboards based on prometheus metrics (&lt;a href=&quot;https://github.com/containous/traefik/pull/3393&quot;&gt;#3393&lt;/a&gt; by &lt;a href=&quot;https://github.com/deimosfr&quot;&gt;deimosfr&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Fix missing tracing backend in documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3706&quot;&gt;#3706&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[provider]&lt;/strong&gt; Typo in auth labels. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3730&quot;&gt;#3730&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[servicefabric]&lt;/strong&gt; Fix Service Fabric docs to use v1.6 labels (&lt;a href=&quot;https://github.com/containous/traefik/pull/3209&quot;&gt;#3209&lt;/a&gt; by &lt;a href=&quot;https://github.com/jjcollinge&quot;&gt;jjcollinge&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Simple documentation grammar update in tracing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3720&quot;&gt;#3720&lt;/a&gt; by &lt;a href=&quot;https://github.com/loadstar81&quot;&gt;loadstar81&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace unrendered emoji (&lt;a href=&quot;https://github.com/containous/traefik/pull/3690&quot;&gt;#3690&lt;/a&gt; by &lt;a href=&quot;https://github.com/korigod&quot;&gt;korigod&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make the &quot;base domain&quot; on all providers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3835&quot;&gt;#3835&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prepare release v1.7.0-rc5 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3902&quot;&gt;#3902&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prepare release v1.7.0-rc3 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3709&quot;&gt;#3709&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prepare release v1.7.0-rc4 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3864&quot;&gt;#3864&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prepare release v1.7.0-rc2 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3632&quot;&gt;#3632&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prepare release v1.7.0-rc1 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3578&quot;&gt;#3578&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Misc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[webui]&lt;/strong&gt; Removed non-applicable default tests and fixed custom tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3908&quot;&gt;#3908&lt;/a&gt; by &lt;a href=&quot;https://github.com/codecyclist&quot;&gt;codecyclist&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.6 into v1.7 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3802&quot;&gt;#3802&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.5 into v1.7 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3595&quot;&gt;#3595&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.4 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3502&quot;&gt;#3502&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.3 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3439&quot;&gt;#3439&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.2 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3367&quot;&gt;#3367&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.1 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3326&quot;&gt;#3326&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3253&quot;&gt;#3253&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc6 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3203&quot;&gt;#3203&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc5 into master  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3180&quot;&gt;#3180&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc4 into master  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3129&quot;&gt;#3129&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0-rc5</id>
+    <updated>2018-09-18T15:33:45+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0-rc5"/>
+    <title>v1.7.0-rc5</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.7.0-rc4...v1.7.0-rc5&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Ensure only certificates from ACME enabled entrypoint are used (&lt;a href=&quot;https://github.com/containous/traefik/pull/3880&quot;&gt;#3880&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix LEGO update (&lt;a href=&quot;https://github.com/containous/traefik/pull/3895&quot;&gt;#3895&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Bump LEGO version (&lt;a href=&quot;https://github.com/containous/traefik/pull/3888&quot;&gt;#3888&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Remove hop-by-hop headers from forward auth response (&lt;a href=&quot;https://github.com/containous/traefik/pull/3900&quot;&gt;#3900&lt;/a&gt; by &lt;a href=&quot;https://github.com/stffabi&quot;&gt;stffabi&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Add missing quotes around backendName in kv template (&lt;a href=&quot;https://github.com/containous/traefik/pull/3885&quot;&gt;#3885&lt;/a&gt; by &lt;a href=&quot;https://github.com/NatMarchand&quot;&gt;NatMarchand&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs]&lt;/strong&gt; Add interface to Træfik logger (&lt;a href=&quot;https://github.com/containous/traefik/pull/3889&quot;&gt;#3889&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Fix tracing duplicated headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3878&quot;&gt;#3878&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Fix error pages (&lt;a href=&quot;https://github.com/containous/traefik/pull/3894&quot;&gt;#3894&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[server]&lt;/strong&gt; Avoid panic during stop (&lt;a href=&quot;https://github.com/containous/traefik/pull/3898&quot;&gt;#3898&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0-rc4</id>
+    <updated>2018-09-07T11:32:27+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0-rc4"/>
+    <title>v1.7.0-rc4</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.7.0-rc3...v1.7.0-rc4&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Use official Pebble Image. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3708&quot;&gt;#3708&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Multiple frontends for consulcatalog (&lt;a href=&quot;https://github.com/containous/traefik/pull/3796&quot;&gt;#3796&lt;/a&gt; by &lt;a href=&quot;https://github.com/hsmade&quot;&gt;hsmade&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Add segment support for ECS  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3817&quot;&gt;#3817&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Remove unnecessary loop (&lt;a href=&quot;https://github.com/containous/traefik/pull/3799&quot;&gt;#3799&lt;/a&gt; by &lt;a href=&quot;https://github.com/ZloyDyadka&quot;&gt;ZloyDyadka&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Pass the TLS Cert infos in headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3826&quot;&gt;#3826&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme,cluster]&lt;/strong&gt; StoreConfig always initializes the account if it is missing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3844&quot;&gt;#3844&lt;/a&gt; by &lt;a href=&quot;https://github.com/geraldcroes&quot;&gt;geraldcroes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Set a keyType to ACME if the account is stored with no KeyType (&lt;a href=&quot;https://github.com/containous/traefik/pull/3733&quot;&gt;#3733&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,consulcatalog,docker,ecs,k8s,kv,marathon,mesos,rancher]&lt;/strong&gt; Auth Forward with certificates in templates. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3804&quot;&gt;#3804&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Prevent unparsable strings from being rendered in the Kubernetes template (&lt;a href=&quot;https://github.com/containous/traefik/pull/3753&quot;&gt;#3753&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Don&#39;t merge kubernetes ingresses when priority is set (&lt;a href=&quot;https://github.com/containous/traefik/pull/3743&quot;&gt;#3743&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Include missing key in error message for KV store (&lt;a href=&quot;https://github.com/containous/traefik/pull/3779&quot;&gt;#3779&lt;/a&gt; by &lt;a href=&quot;https://github.com/camelpunch&quot;&gt;camelpunch&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Avoid a panic during Prometheus registering (&lt;a href=&quot;https://github.com/containous/traefik/pull/3717&quot;&gt;#3717&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,websocket]&lt;/strong&gt; Enable retry on websocket (&lt;a href=&quot;https://github.com/containous/traefik/pull/3825&quot;&gt;#3825&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Extend https redirection tests, and fix incorrect behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3742&quot;&gt;#3742&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[oxy]&lt;/strong&gt; Handle Te header when http2 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3824&quot;&gt;#3824&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[server]&lt;/strong&gt; Avoid goroutine leak in server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3851&quot;&gt;#3851&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix documentation for route53 acme provider (&lt;a href=&quot;https://github.com/containous/traefik/pull/3811&quot;&gt;#3811&lt;/a&gt; by &lt;a href=&quot;https://github.com/A-Shleifman&quot;&gt;A-Shleifman&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update ACME documentation about TLS-ALPN challenge (&lt;a href=&quot;https://github.com/containous/traefik/pull/3756&quot;&gt;#3756&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Change syntax in quick start guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3726&quot;&gt;#3726&lt;/a&gt; by &lt;a href=&quot;https://github.com/trotro&quot;&gt;trotro&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Improve the wording in the documentation for Docker and fix title for Docker User Guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3797&quot;&gt;#3797&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Typo in docker-and-lets-encrypt.md (&lt;a href=&quot;https://github.com/containous/traefik/pull/3724&quot;&gt;#3724&lt;/a&gt; by &lt;a href=&quot;https://github.com/A-Shleifman&quot;&gt;A-Shleifman&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update kubernetes docs to reflect https options (&lt;a href=&quot;https://github.com/containous/traefik/pull/3807&quot;&gt;#3807&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update kubernetes.md (&lt;a href=&quot;https://github.com/containous/traefik/pull/3719&quot;&gt;#3719&lt;/a&gt; by &lt;a href=&quot;https://github.com/kmaris&quot;&gt;kmaris&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Improve Connection Limit Kubernetes Documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3711&quot;&gt;#3711&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[provider]&lt;/strong&gt; Typo in auth labels. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3730&quot;&gt;#3730&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Simple documentation grammar update in tracing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3720&quot;&gt;#3720&lt;/a&gt; by &lt;a href=&quot;https://github.com/loadstar81&quot;&gt;loadstar81&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make the &quot;base domain&quot; on all providers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3835&quot;&gt;#3835&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Misc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Merge v1.6.6 into v1.7 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3802&quot;&gt;#3802&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.6.6</id>
+    <updated>2018-09-11T22:56:56+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.6.6"/>
+    <title>v1.6.6</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.5...v1.6.6&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Avoid duplicated ACME resolution (&lt;a href=&quot;https://github.com/containous/traefik/pull/3751&quot;&gt;#3751&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api]&lt;/strong&gt; Remove TLS in API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3788&quot;&gt;#3788&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;). Fixes &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15598&quot; rel=&quot;nofollow&quot;&gt;CVE-2018-15598&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[cluster]&lt;/strong&gt; Remove unusable &lt;code&gt;--cluster&lt;/code&gt; flag (&lt;a href=&quot;https://github.com/containous/traefik/pull/3616&quot;&gt;#3616&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Fix bad condition in ECS provider (&lt;a href=&quot;https://github.com/containous/traefik/pull/3609&quot;&gt;#3609&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set keepalive on TCP socket so idleTimeout works (&lt;a href=&quot;https://github.com/containous/traefik/pull/3740&quot;&gt;#3740&lt;/a&gt; by &lt;a href=&quot;https://github.com/ajardan&quot;&gt;ajardan&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A tiny rewording on the documentation API&#39;s page (&lt;a href=&quot;https://github.com/containous/traefik/pull/3794&quot;&gt;#3794&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adding warnings and solution about the configuration exposure (&lt;a href=&quot;https://github.com/containous/traefik/pull/3790&quot;&gt;#3790&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix path to the debug pprof API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3608&quot;&gt;#3608&lt;/a&gt; by &lt;a href=&quot;https://github.com/multani&quot;&gt;multani&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Misc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[oxy,websocket]&lt;/strong&gt; Update oxy dependency (&lt;a href=&quot;https://github.com/containous/traefik/pull/3777&quot;&gt;#3777&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0-rc3</id>
+    <updated>2018-09-11T22:57:26+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0-rc3"/>
+    <title>v1.7.0-rc3</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.7.0-rc2...v1.7.0-rc3&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[consul,etcd,tls]&lt;/strong&gt; Improve TLS integration tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3679&quot;&gt;#3679&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add possibility to set a protocol (&lt;a href=&quot;https://github.com/containous/traefik/pull/3648&quot;&gt;#3648&lt;/a&gt; by &lt;a href=&quot;https://github.com/SantoDE&quot;&gt;SantoDE&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix acme account deletion without provider change (&lt;a href=&quot;https://github.com/containous/traefik/pull/3664&quot;&gt;#3664&lt;/a&gt; by &lt;a href=&quot;https://github.com/zyclonite&quot;&gt;zyclonite&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update lego (&lt;a href=&quot;https://github.com/containous/traefik/pull/3659&quot;&gt;#3659&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix ACME certificate for wildcard and root domains (&lt;a href=&quot;https://github.com/containous/traefik/pull/3675&quot;&gt;#3675&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api]&lt;/strong&gt; Remove TLS in API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3665&quot;&gt;#3665&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;). Fixes &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15598&quot; rel=&quot;nofollow&quot;&gt;CVE-2018-15598&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Uses both binded HostIP and HostPort when useBindPortIP=true (&lt;a href=&quot;https://github.com/containous/traefik/pull/3638&quot;&gt;#3638&lt;/a&gt; by &lt;a href=&quot;https://github.com/geraldcroes&quot;&gt;geraldcroes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix Rewrite-target regex (&lt;a href=&quot;https://github.com/containous/traefik/pull/3699&quot;&gt;#3699&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Correct Entrypoint Redirect with Stripped or Added Path (&lt;a href=&quot;https://github.com/containous/traefik/pull/3631&quot;&gt;#3631&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Added default configuration for DataDog APM Tracer (&lt;a href=&quot;https://github.com/containous/traefik/pull/3655&quot;&gt;#3655&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tracing]&lt;/strong&gt; Added support for Trace name truncation for traces (&lt;a href=&quot;https://github.com/containous/traefik/pull/3689&quot;&gt;#3689&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[websocket]&lt;/strong&gt; Handle shutdown of Hijacked connections (&lt;a href=&quot;https://github.com/containous/traefik/pull/3636&quot;&gt;#3636&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;H2C: Remove buggy line in init to make verbose switch working (&lt;a href=&quot;https://github.com/containous/traefik/pull/3701&quot;&gt;#3701&lt;/a&gt; by &lt;a href=&quot;https://github.com/dduportal&quot;&gt;dduportal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updating oxy dependency (&lt;a href=&quot;https://github.com/containous/traefik/pull/3700&quot;&gt;#3700&lt;/a&gt; by &lt;a href=&quot;https://github.com/crholm&quot;&gt;crholm&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Update Namecheap status (&lt;a href=&quot;https://github.com/containous/traefik/pull/3604&quot;&gt;#3604&lt;/a&gt; by &lt;a href=&quot;https://github.com/stoinov&quot;&gt;stoinov&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Fix some DNS provider link (&lt;a href=&quot;https://github.com/containous/traefik/pull/3639&quot;&gt;#3639&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Fix style in examples/quickstart (&lt;a href=&quot;https://github.com/containous/traefik/pull/3705&quot;&gt;#3705&lt;/a&gt; by &lt;a href=&quot;https://github.com/korigod&quot;&gt;korigod&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add traefik prefix to k8s annotations (&lt;a href=&quot;https://github.com/containous/traefik/pull/3682&quot;&gt;#3682&lt;/a&gt; by &lt;a href=&quot;https://github.com/zifeo&quot;&gt;zifeo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Fix missing tracing backend in documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3706&quot;&gt;#3706&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace unrendered emoji (&lt;a href=&quot;https://github.com/containous/traefik/pull/3690&quot;&gt;#3690&lt;/a&gt; by &lt;a href=&quot;https://github.com/korigod&quot;&gt;korigod&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0-rc2</id>
+    <updated>2018-07-17T14:20:17+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0-rc2"/>
+    <title>v1.7.0-rc2</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.7.0-rc1...v1.7.0-rc2&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme,provider]&lt;/strong&gt; Create init method on provider interface (&lt;a href=&quot;https://github.com/containous/traefik/pull/3580&quot;&gt;#3580&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Serve TLS-Challenge certificate in first (&lt;a href=&quot;https://github.com/containous/traefik/pull/3605&quot;&gt;#3605&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api,authentication,webui]&lt;/strong&gt; Auth section in web UI.  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3628&quot;&gt;#3628&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware,provider]&lt;/strong&gt; Don&#39;t pass the Authorization header to the backends (&lt;a href=&quot;https://github.com/containous/traefik/pull/3606&quot;&gt;#3606&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Fix 400 bad request on  AWS ECS API (&lt;a href=&quot;https://github.com/containous/traefik/pull/3629&quot;&gt;#3629&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix rewrite-target Annotation behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3582&quot;&gt;#3582&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Correct App-Root kubernetes behavior (&lt;a href=&quot;https://github.com/containous/traefik/pull/3592&quot;&gt;#3592&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add more K8s Unit Tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3583&quot;&gt;#3583&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; KV and authentication (&lt;a href=&quot;https://github.com/containous/traefik/pull/3615&quot;&gt;#3615&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Send &#39;Retry-After&#39; to comply with RFC6585. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3593&quot;&gt;#3593&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Correct Modifier in Kubernetes Documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3610&quot;&gt;#3610&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Misc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Merge v1.6.5 into v1.7 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3595&quot;&gt;#3595&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.6.5</id>
+    <updated>2018-07-11T09:23:59+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.6.5"/>
+    <title>v1.6.5</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.4...v1.6.5&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Add a mutex on local store for HTTPChallenges (&lt;a href=&quot;https://github.com/containous/traefik/pull/3579&quot;&gt;#3579&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Split the error handling from Consul Catalog (deadlock) (&lt;a href=&quot;https://github.com/containous/traefik/pull/3560&quot;&gt;#3560&lt;/a&gt; by &lt;a href=&quot;https://github.com/ortz&quot;&gt;ortz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; segment labels: multiple frontends for one backend. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3511&quot;&gt;#3511&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Better support on same prefix at the same level in the KV (&lt;a href=&quot;https://github.com/containous/traefik/pull/3532&quot;&gt;#3532&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs]&lt;/strong&gt; Add logs when error is generated in error handler (&lt;a href=&quot;https://github.com/containous/traefik/pull/3567&quot;&gt;#3567&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Create middleware to be able to handle HTTP pipelining correctly (&lt;a href=&quot;https://github.com/containous/traefik/pull/3513&quot;&gt;#3513&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; The gandiv5 provider works with wildcard (&lt;a href=&quot;https://github.com/containous/traefik/pull/3506&quot;&gt;#3506&lt;/a&gt; by &lt;a href=&quot;https://github.com/manu5801&quot;&gt;manu5801&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Update keyFile first/last line comment in kv-config.md (&lt;a href=&quot;https://github.com/containous/traefik/pull/3558&quot;&gt;#3558&lt;/a&gt; by &lt;a href=&quot;https://github.com/madnight&quot;&gt;madnight&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor formatting issue in user-guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3546&quot;&gt;#3546&lt;/a&gt; by &lt;a href=&quot;https://github.com/Vanuan&quot;&gt;Vanuan&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.7.0-rc1</id>
+    <updated>2018-07-09T16:35:03+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.7.0-rc1"/>
+    <title>v1.7.0-rc1</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.0-rc1...v1.7.0-rc1&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Simplify get acme client (&lt;a href=&quot;https://github.com/containous/traefik/pull/3499&quot;&gt;#3499&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Simplify acme e2e tests. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3534&quot;&gt;#3534&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Add option to select algorithm to generate ACME certificates (&lt;a href=&quot;https://github.com/containous/traefik/pull/3319&quot;&gt;#3319&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Enable to override certificates in key-value store when using storeconfig (&lt;a href=&quot;https://github.com/containous/traefik/pull/3202&quot;&gt;#3202&lt;/a&gt; by &lt;a href=&quot;https://github.com/thomasjpfan&quot;&gt;thomasjpfan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; ACME TLS ALPN (&lt;a href=&quot;https://github.com/containous/traefik/pull/3553&quot;&gt;#3553&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Remove acme provider dependency in server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3225&quot;&gt;#3225&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[api,cluster]&lt;/strong&gt; Improved cluster api to include the current leader node (&lt;a href=&quot;https://github.com/containous/traefik/pull/3100&quot;&gt;#3100&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,k8s]&lt;/strong&gt; Auth support in frontends for k8s and file (&lt;a href=&quot;https://github.com/containous/traefik/pull/3460&quot;&gt;#3460&lt;/a&gt; by &lt;a href=&quot;https://github.com/Zatte&quot;&gt;Zatte&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Add xforwarded method (&lt;a href=&quot;https://github.com/containous/traefik/pull/3424&quot;&gt;#3424&lt;/a&gt; by &lt;a href=&quot;https://github.com/erik-sjoestedt&quot;&gt;erik-sjoestedt&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[authentication,middleware]&lt;/strong&gt; Forward auth headers (&lt;a href=&quot;https://github.com/containous/traefik/pull/3521&quot;&gt;#3521&lt;/a&gt; by &lt;a href=&quot;https://github.com/hwhelan-CB&quot;&gt;hwhelan-CB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consul,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Auth support in frontends (&lt;a href=&quot;https://github.com/containous/traefik/pull/3559&quot;&gt;#3559&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog,docker,ecs,file,k8s,kv,marathon,mesos,rancher]&lt;/strong&gt; Add SSLForceHost support. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3246&quot;&gt;#3246&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Add support for stale reads from Consul catalog (&lt;a href=&quot;https://github.com/containous/traefik/pull/3523&quot;&gt;#3523&lt;/a&gt; by &lt;a href=&quot;https://github.com/marenzo&quot;&gt;marenzo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Add a default value for the docker.network configuration (&lt;a href=&quot;https://github.com/containous/traefik/pull/3471&quot;&gt;#3471&lt;/a&gt; by &lt;a href=&quot;https://github.com/jbdoumenjou&quot;&gt;jbdoumenjou&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Support for AWS ECS Fargate (&lt;a href=&quot;https://github.com/containous/traefik/pull/3379&quot;&gt;#3379&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Add support for ECS constraints (&lt;a href=&quot;https://github.com/containous/traefik/pull/3537&quot;&gt;#3537&lt;/a&gt; by &lt;a href=&quot;https://github.com/andrewstucki&quot;&gt;andrewstucki&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Support &lt;code&gt;traefik.backend&lt;/code&gt; for ECS (&lt;a href=&quot;https://github.com/containous/traefik/pull/3510&quot;&gt;#3510&lt;/a&gt; by &lt;a href=&quot;https://github.com/hwhelan-CB&quot;&gt;hwhelan-CB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[ecs]&lt;/strong&gt; Allow binding ECS container port (&lt;a href=&quot;https://github.com/containous/traefik/pull/3533&quot;&gt;#3533&lt;/a&gt; by &lt;a href=&quot;https://github.com/andrewstucki&quot;&gt;andrewstucki&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck,consul,consulcatalog,docker,ecs,kv,marathon,mesos,rancher]&lt;/strong&gt; Override health check scheme (&lt;a href=&quot;https://github.com/containous/traefik/pull/3315&quot;&gt;#3315&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Support 3xx HTTP status codes for health check (&lt;a href=&quot;https://github.com/containous/traefik/pull/3364&quot;&gt;#3364&lt;/a&gt; by &lt;a href=&quot;https://github.com/SniperCZE&quot;&gt;SniperCZE&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Support all 2xx HTTP status code for health check. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3362&quot;&gt;#3362&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[healthcheck]&lt;/strong&gt; Add HTTP headers to healthcheck. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3047&quot;&gt;#3047&lt;/a&gt; by &lt;a href=&quot;https://github.com/zetaab&quot;&gt;zetaab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add more k8s tests (&lt;a href=&quot;https://github.com/containous/traefik/pull/3491&quot;&gt;#3491&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Substitude hardcoded &quot;&amp;lt;namespace&amp;gt;/&amp;lt;name&amp;gt;&quot; with k8s ListerGetter (&lt;a href=&quot;https://github.com/containous/traefik/pull/3470&quot;&gt;#3470&lt;/a&gt; by &lt;a href=&quot;https://github.com/yue9944882&quot;&gt;yue9944882&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Custom frontend name for test helper (&lt;a href=&quot;https://github.com/containous/traefik/pull/3444&quot;&gt;#3444&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add annotation to allow modifiers to be used properly in kubernetes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3481&quot;&gt;#3481&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Create Global Backend Ingress (&lt;a href=&quot;https://github.com/containous/traefik/pull/3404&quot;&gt;#3404&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Specify backend servers&#39; weight via annotation for kubernetes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3112&quot;&gt;#3112&lt;/a&gt; by &lt;a href=&quot;https://github.com/yue9944882&quot;&gt;yue9944882&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Support multi-port services. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3121&quot;&gt;#3121&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Mapping ExternalNames to custom ports (&lt;a href=&quot;https://github.com/containous/traefik/pull/3231&quot;&gt;#3231&lt;/a&gt; by &lt;a href=&quot;https://github.com/gildas&quot;&gt;gildas&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Allow any kubernetes ingressClass value (&lt;a href=&quot;https://github.com/containous/traefik/pull/3516&quot;&gt;#3516&lt;/a&gt; by &lt;a href=&quot;https://github.com/rtreffer&quot;&gt;rtreffer&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Enable Ingress Status updates (&lt;a href=&quot;https://github.com/containous/traefik/pull/3324&quot;&gt;#3324&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Use index-based syntax in KV tests. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3352&quot;&gt;#3352&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs,middleware]&lt;/strong&gt; Make accesslogs.logTheRoundTrip async to get lost performance (&lt;a href=&quot;https://github.com/containous/traefik/pull/3152&quot;&gt;#3152&lt;/a&gt; by &lt;a href=&quot;https://github.com/ryarnyah&quot;&gt;ryarnyah&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs,middleware]&lt;/strong&gt; Added duration filter for logs (&lt;a href=&quot;https://github.com/containous/traefik/pull/3463&quot;&gt;#3463&lt;/a&gt; by &lt;a href=&quot;https://github.com/rodrigodiez&quot;&gt;rodrigodiez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[marathon]&lt;/strong&gt; Adding compatibility for marathon 1.5 (&lt;a href=&quot;https://github.com/containous/traefik/pull/3505&quot;&gt;#3505&lt;/a&gt; by &lt;a href=&quot;https://github.com/TrevinTeacutter&quot;&gt;TrevinTeacutter&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[marathon]&lt;/strong&gt; Sane default and configurable Marathon request timeouts (&lt;a href=&quot;https://github.com/containous/traefik/pull/3286&quot;&gt;#3286&lt;/a&gt; by &lt;a href=&quot;https://github.com/marco-jantke&quot;&gt;marco-jantke&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[mesos]&lt;/strong&gt; Segments Labels: Mesos (&lt;a href=&quot;https://github.com/containous/traefik/pull/3383&quot;&gt;#3383&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewkerrigan&quot;&gt;drewkerrigan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Metrics: Add support for InfluxDB Database / RetentionPolicy and HTTP client (&lt;a href=&quot;https://github.com/containous/traefik/pull/3391&quot;&gt;#3391&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewkerrigan&quot;&gt;drewkerrigan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,server]&lt;/strong&gt; Extreme Makeover: server refactoring (&lt;a href=&quot;https://github.com/containous/traefik/pull/3461&quot;&gt;#3461&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Added integration support for DataDog APM Tracing (&lt;a href=&quot;https://github.com/containous/traefik/pull/3517&quot;&gt;#3517&lt;/a&gt; by &lt;a href=&quot;https://github.com/aantono&quot;&gt;aantono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware,tracing]&lt;/strong&gt; Create a custom logger for jaeger (&lt;a href=&quot;https://github.com/containous/traefik/pull/3541&quot;&gt;#3541&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Performance enhancements for the rules matchers. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3563&quot;&gt;#3563&lt;/a&gt; by &lt;a href=&quot;https://github.com/ShaneSaww&quot;&gt;ShaneSaww&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Extract internal router creation from server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3204&quot;&gt;#3204&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[rules]&lt;/strong&gt; CNAME flattening (&lt;a href=&quot;https://github.com/containous/traefik/pull/3403&quot;&gt;#3403&lt;/a&gt; by &lt;a href=&quot;https://github.com/gamalan&quot;&gt;gamalan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[servicefabric]&lt;/strong&gt; Add white list for Service Fabric (&lt;a href=&quot;https://github.com/containous/traefik/pull/3079&quot;&gt;#3079&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[servicefabric]&lt;/strong&gt; Add HTTP headers to healthcheck. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3205&quot;&gt;#3205&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tls]&lt;/strong&gt; Improve TLS Handshake (&lt;a href=&quot;https://github.com/containous/traefik/pull/3512&quot;&gt;#3512&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[tls]&lt;/strong&gt; Support TLS MinVersion and CipherSuite as CLI option. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3107&quot;&gt;#3107&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[webui]&lt;/strong&gt; Add some missing elements in the WebUI (&lt;a href=&quot;https://github.com/containous/traefik/pull/3327&quot;&gt;#3327&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor changes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3554&quot;&gt;#3554&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;h2c server (&lt;a href=&quot;https://github.com/containous/traefik/pull/3387&quot;&gt;#3387&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix backend reuse (&lt;a href=&quot;https://github.com/containous/traefik/pull/3312&quot;&gt;#3312&lt;/a&gt; by &lt;a href=&quot;https://github.com/arnested&quot;&gt;arnested&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Call functions to enable block/mutex pprof profiles. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3564&quot;&gt;#3564&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement h2c with backend (&lt;a href=&quot;https://github.com/containous/traefik/pull/3371&quot;&gt;#3371&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade GRPC dependencies (&lt;a href=&quot;https://github.com/containous/traefik/pull/3342&quot;&gt;#3342&lt;/a&gt; by &lt;a href=&quot;https://github.com/gottwald&quot;&gt;gottwald&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Generated assets file are only mandatory in main (&lt;a href=&quot;https://github.com/containous/traefik/pull/3386&quot;&gt;#3386&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Does not generate ACME certificate if domain is checked by dynamic certificate (&lt;a href=&quot;https://github.com/containous/traefik/pull/3238&quot;&gt;#3238&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix panic setting ingress status (&lt;a href=&quot;https://github.com/containous/traefik/pull/3492&quot;&gt;#3492&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs]&lt;/strong&gt; Add logs when error is generated in error handler (&lt;a href=&quot;https://github.com/containous/traefik/pull/3571&quot;&gt;#3571&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Avoid retries when any data was written to the backend (&lt;a href=&quot;https://github.com/containous/traefik/pull/3285&quot;&gt;#3285&lt;/a&gt; by &lt;a href=&quot;https://github.com/marco-jantke&quot;&gt;marco-jantke&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add a k8s guide section on traffic splitting via service weights. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3556&quot;&gt;#3556&lt;/a&gt; by &lt;a href=&quot;https://github.com/timoreimann&quot;&gt;timoreimann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Change code block of traefik-web-ui to match file (&lt;a href=&quot;https://github.com/containous/traefik/pull/3542&quot;&gt;#3542&lt;/a&gt; by &lt;a href=&quot;https://github.com/drewgwallace&quot;&gt;drewgwallace&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Fix typo which breaks k8s example manifest (&lt;a href=&quot;https://github.com/containous/traefik/pull/3441&quot;&gt;#3441&lt;/a&gt; by &lt;a href=&quot;https://github.com/GeertJohan&quot;&gt;GeertJohan&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Adding grafana dashboards based on prometheus metrics (&lt;a href=&quot;https://github.com/containous/traefik/pull/3393&quot;&gt;#3393&lt;/a&gt; by &lt;a href=&quot;https://github.com/deimosfr&quot;&gt;deimosfr&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[servicefabric]&lt;/strong&gt; Fix Service Fabric docs to use v1.6 labels (&lt;a href=&quot;https://github.com/containous/traefik/pull/3209&quot;&gt;#3209&lt;/a&gt; by &lt;a href=&quot;https://github.com/jjcollinge&quot;&gt;jjcollinge&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Misc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Merge v1.6.4 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3502&quot;&gt;#3502&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.3 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3439&quot;&gt;#3439&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.2 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3367&quot;&gt;#3367&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.1 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3326&quot;&gt;#3326&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3253&quot;&gt;#3253&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc6 into master (&lt;a href=&quot;https://github.com/containous/traefik/pull/3203&quot;&gt;#3203&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc5 into master  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3180&quot;&gt;#3180&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Merge v1.6.0-rc4 into master  (&lt;a href=&quot;https://github.com/containous/traefik/pull/3129&quot;&gt;#3129&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.6.4</id>
+    <updated>2018-06-15T16:49:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.6.4"/>
+    <title>v1.6.4</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.3...v1.6.4&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Use logrus writer instead of os.Stderr (&lt;a href=&quot;https://github.com/containous/traefik/pull/3498&quot;&gt;#3498&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Enclose IPv6 addresses in &quot;[]&quot; (&lt;a href=&quot;https://github.com/containous/traefik/pull/3477&quot;&gt;#3477&lt;/a&gt; by &lt;a href=&quot;https://github.com/herver&quot;&gt;herver&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker,ecs,marathon,mesos,rancher]&lt;/strong&gt; Use net.JoinHostPort for servers URL (&lt;a href=&quot;https://github.com/containous/traefik/pull/3484&quot;&gt;#3484&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[docker]&lt;/strong&gt; Backend name with docker-compose and segments. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3485&quot;&gt;#3485&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[oxy]&lt;/strong&gt; Handle buffer pool for oxy (&lt;a href=&quot;https://github.com/containous/traefik/pull/3450&quot;&gt;#3450&lt;/a&gt; by &lt;a href=&quot;https://github.com/Juliens&quot;&gt;Juliens&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; The exoscale provider works with wildcard (&lt;a href=&quot;https://github.com/containous/traefik/pull/3479&quot;&gt;#3479&lt;/a&gt; by &lt;a href=&quot;https://github.com/greut&quot;&gt;greut&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consul,docker]&lt;/strong&gt; Edit wording (&lt;a href=&quot;https://github.com/containous/traefik/pull/3438&quot;&gt;#3438&lt;/a&gt; by &lt;a href=&quot;https://github.com/mayank23&quot;&gt;mayank23&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Add missing annotation documentation. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3454&quot;&gt;#3454&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[kv]&lt;/strong&gt; Fix typo in kv user guide (&lt;a href=&quot;https://github.com/containous/traefik/pull/3474&quot;&gt;#3474&lt;/a&gt; by &lt;a href=&quot;https://github.com/shambarick&quot;&gt;shambarick&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Clean metrics documentation. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3488&quot;&gt;#3488&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/42408804/v1.6.3</id>
+    <updated>2018-06-05T16:56:22+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/containous/traefik/releases/tag/v1.6.3"/>
+    <title>v1.6.3</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/containous/traefik/compare/v1.6.2...v1.6.3&quot;&gt;All Commits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Add user agent for ACME (&lt;a href=&quot;https://github.com/containous/traefik/pull/3431&quot;&gt;#3431&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Use to the stable version of Lego (&lt;a href=&quot;https://github.com/containous/traefik/pull/3418&quot;&gt;#3418&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme,cluster]&lt;/strong&gt; Improve ACME account registration URI management (&lt;a href=&quot;https://github.com/containous/traefik/pull/3398&quot;&gt;#3398&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme,cluster]&lt;/strong&gt; Remove ACME empty certificates from KV store (&lt;a href=&quot;https://github.com/containous/traefik/pull/3389&quot;&gt;#3389&lt;/a&gt; by &lt;a href=&quot;https://github.com/nmengin&quot;&gt;nmengin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Reflect changes in catalog healthy nodes in healthCheck watch (&lt;a href=&quot;https://github.com/containous/traefik/pull/3390&quot;&gt;#3390&lt;/a&gt; by &lt;a href=&quot;https://github.com/thebinary&quot;&gt;thebinary&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[consulcatalog]&lt;/strong&gt; Detect change when service or node are in maintenance mode (&lt;a href=&quot;https://github.com/containous/traefik/pull/3434&quot;&gt;#3434&lt;/a&gt; by &lt;a href=&quot;https://github.com/mmatur&quot;&gt;mmatur&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update Kubernetes provider to support IPv6 Backends (&lt;a href=&quot;https://github.com/containous/traefik/pull/3432&quot;&gt;#3432&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[logs,middleware]&lt;/strong&gt; Add URL and Host for some access logs. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3430&quot;&gt;#3430&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[metrics]&lt;/strong&gt; Improve Prometheus metrics removal (&lt;a href=&quot;https://github.com/containous/traefik/pull/3287&quot;&gt;#3287&lt;/a&gt; by &lt;a href=&quot;https://github.com/marco-jantke&quot;&gt;marco-jantke&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Whitelist and XFF. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3411&quot;&gt;#3411&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[middleware]&lt;/strong&gt; Error pages and header merge (&lt;a href=&quot;https://github.com/containous/traefik/pull/3394&quot;&gt;#3394&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[websocket]&lt;/strong&gt; Includes the headers in the HTTP response of a websocket request (&lt;a href=&quot;https://github.com/containous/traefik/pull/3425&quot;&gt;#3425&lt;/a&gt; by &lt;a href=&quot;https://github.com/geraldcroes&quot;&gt;geraldcroes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[webui]&lt;/strong&gt; Webui Whitelist overflow. (&lt;a href=&quot;https://github.com/containous/traefik/pull/3412&quot;&gt;#3412&lt;/a&gt; by &lt;a href=&quot;https://github.com/ldez&quot;&gt;ldez&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Docs: ACME Overhaul (&lt;a href=&quot;https://github.com/containous/traefik/pull/3421&quot;&gt;#3421&lt;/a&gt; by &lt;a href=&quot;https://github.com/Dargmuesli&quot;&gt;Dargmuesli&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[acme]&lt;/strong&gt; Minor documentation changes (&lt;a href=&quot;https://github.com/containous/traefik/pull/3405&quot;&gt;#3405&lt;/a&gt; by &lt;a href=&quot;https://github.com/amincheloh&quot;&gt;amincheloh&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Helm installation using values (&lt;a href=&quot;https://github.com/containous/traefik/pull/3392&quot;&gt;#3392&lt;/a&gt; by &lt;a href=&quot;https://github.com/erikaulin&quot;&gt;erikaulin&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[k8s]&lt;/strong&gt; Update Kubernetes Port Documentation (&lt;a href=&quot;https://github.com/containous/traefik/pull/3368&quot;&gt;#3368&lt;/a&gt; by &lt;a href=&quot;https://github.com/dtomcej&quot;&gt;dtomcej&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>traefiker</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/30906710?s=60&amp;v=4"/>
+  </entry>
+</feed>

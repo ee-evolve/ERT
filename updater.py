@@ -1,11 +1,6 @@
-import unittest
+import atoma
+import requests
 
-
-class Test(unittest.TestCase):
-
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
-
-
-if __name__ == '__main__':
-    unittest.main()
+response = requests.get('http://lucumr.pocoo.org/feed.atom')
+feed = atoma.parse_atom_bytes(response.content)
+print(feed)
