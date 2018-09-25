@@ -9,4 +9,4 @@ jobs:
      - run: docker build -t evolve/ert:$CIRCLE_BRANCH .
 
      # deploy the image
-     - run: docker run --rm evolve/ert:$CIRCLE_BRANCH -e SLACK_WEBHOOK=${SLACK_WEBHOOK}
+     - run: docker run --rm -e SLACK_WEBHOOK=${SLACK_WEBHOOK} evolve/ert:$CIRCLE_BRANCH 
